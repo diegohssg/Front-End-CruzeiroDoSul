@@ -1,0 +1,161 @@
+/* ---------- FONTES E REGRAS GLOBAIS ---------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    background: #f7f7f7;
+    color: #333;
+}
+
+h1, h2, legend {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* ---------- HEADER E MENU ---------- */
+header {
+    background: #ff7a00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- LAYOUT GERAL ---------- */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* ---------- FORMULÁRIOS (cadastro.html) ---------- */
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+fieldset {
+    border: 2px solid #ff7a00;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #ff7a00;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #ff7a00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #e36b00;
+}
+
+/* ---------- GALERIA DE IMAGENS (index e projetos) ---------- */
+section figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* IMAGENS UNIFORMES E RESPONSIVAS */
+section figure img {
+    width: 100%;
+    max-width: 380px;         /* mesma largura padronizada */
+    height: 250px;            /* altura fixa para padronização */
+    object-fit: cover;        /* corta e mantém proporção */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* CENTRALIZAÇÃO */
+section figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* ---------- RESPONSIVIDADE EXTRA ---------- */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section figure img {
+        max-width: 100%;
+        height: 200px;
+    }
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: #222;
+    color: white;
+    text-align: center;
+}
+.erro {
+  color: #d32f2f;
+  font-size: 0.9rem;
+}
+
+.campo-erro {
+  border-color: #d32f2f;
+  outline-color: #d32f2f;
+}
+
+.sucesso {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
